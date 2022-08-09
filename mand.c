@@ -1,7 +1,5 @@
 #include "main.h"
-
 #include <unistd.h>
-
 #include <stdlib.h>
 /**
  * print_c - A function that prints a char
