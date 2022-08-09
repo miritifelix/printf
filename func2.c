@@ -133,6 +133,7 @@ int flags, int width, int precision, int size)
 {
 char x;
 char *str;
+
 unsigned int i, j;
 int count = 0;
 char in[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
