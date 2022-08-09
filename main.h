@@ -7,13 +7,12 @@
  * @type: type to print
  * @function: function to print
  */
- 
+
 typedef struct print
 {
-	char *type;
-	int (*function)(va_list);
+char *type;
+int (*function)(va_list);
 } print_t;
-
 int _printf(const char *format, ...);
 int _putchar(char c);
 int print_c(va_list c);
