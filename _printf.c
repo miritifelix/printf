@@ -28,7 +28,7 @@ int (*check_format(const char *format))(va_list)
 		{NULL, NULL}
 	};
 
-	for (i=0; p[i].type != NULL; i++)
+	for (i = 0; p[i].type != NULL; i++)
 	{
 		if (*(p[i].type) == *format)
 			break;
@@ -82,6 +82,6 @@ int _printf(const char *format, ...)
 		}
 	}
 	va_end(name);
-	
+
 	return (counter);
 }

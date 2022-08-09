@@ -1,12 +1,12 @@
 #include <limits.h>
-
+#include <string.h>
 #include <stdio.h>
-
 #include "main.h"
-/**
+ /**
  * main - Entry point
  * Return: Always 0
  */
+int _putchar(char c);
 int main(void)
 {
 int len;
