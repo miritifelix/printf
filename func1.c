@@ -24,6 +24,7 @@ int print_unsigned(va_list types, char buffer[],
 
 	buffer[BUFF_SIZE - 1] = '\0';
 
+
 	while (num > 0)
 	{
 		buffer[i--] = (num % 10) + '0';
@@ -43,7 +44,7 @@ int print_unsigned(va_list types, char buffer[],
  * @width: get width
  * @precision: Precision specification
  * @size: Size specifier
- * Return: Number of chars printed
+ * Return: Number of chars print
  */
 int print_octal(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
