@@ -7,6 +7,35 @@ void print_buffer(char buffer[], int *buff_ind);
  * @format: format.
  * Return: Printed chars.
  */
+<<<<<<< HEAD
+=======
+
+int (*check_format(const char *format))(va_list)
+{
+	int i = 0;
+	print_t p[] = {
+		{"c", print_c},
+		{"s", print_s},
+		{"i", print_i},
+		{"d", print_d},
+		{NULL, NULL}
+	};
+
+	for (i = 0; p[i].type != NULL; i++)
+	{
+		if (*(p[i].type) == *format)
+			break;
+	}
+	return (p[i].function);
+}
+
+/**
+ *_printf - function for format printing
+ *@format: list of arguments to printing
+ *Return: Number of characters to printing
+ */
+
+>>>>>>> refs/remotes/origin/main
 int _printf(const char *format, ...)
 {
 	int i, printed = 0, printed_chars = 0;
@@ -44,12 +73,18 @@ int _printf(const char *format, ...)
 			printed_chars += printed;
 		}
 	}
+<<<<<<< HEAD
 
 	print_buffer(buffer, &buff_ind);
 
 	va_end(list);
 
 	return (printed_chars);
+=======
+	va_end(name);
+
+	return (counter);
+>>>>>>> refs/remotes/origin/main
 }
 
 /**
